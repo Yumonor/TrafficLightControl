@@ -1,0 +1,154 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on May 24, 2020 at 13:10:25 CST
+ncverilog
+	tb.v
+	+access+r
+Recompiling... reason: file './tb.v' is newer than expected.
+	expected: Sun May 24 01:35:44 2020
+	actual:   Sun May 24 13:09:45 2020
+file: tb.v
+	module worklib.TLC:v
+		errors: 0, warnings: 0
+	module worklib.tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	TLC uut(HG,HY,HR,FG,FY,FR,FL_show,HL_show,time_short,time_long,time_buf,coil,button,rst,clk);
+	                                                                      |
+ncelab: *W,CUVMPW (./tb.v,18|71): port sizes differ in port connection (7/4).
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.TLC:v <0x38e35150>
+			streams:  10, words:  8388
+		worklib.tb:v <0x4784c6b6>
+			streams:   5, words:  7740
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:          15      15
+		Scalar wires:       10       -
+		Vectored wires:      5       -
+		Always blocks:       3       3
+		Initial blocks:      3       3
+		Cont. assignments:   1       6
+	Writing initial simulation snapshot: worklib.tb:v
+Loading snapshot worklib.tb:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+                   0HG=x HY=x HR=x FG=x FY=x FR=x FL_show=  x HL_show=  x
+
+                   5HG=0 HY=0 HR=1 FG=0 FY=0 FR=1 FL_show= 99 HL_show=  3
+
+                  25HG=0 HY=0 HR=1 FG=0 FY=0 FR=1 FL_show= 99 HL_show=  2
+
+                  35HG=0 HY=0 HR=1 FG=0 FY=0 FR=1 FL_show= 99 HL_show=  1
+
+                  45HG=1 HY=0 HR=0 FG=0 FY=0 FR=1 FL_show= 99 HL_show= 99
+
+                  85HG=1 HY=0 HR=0 FG=0 FY=0 FR=1 FL_show= 11 HL_show=  5
+
+                  95HG=1 HY=0 HR=0 FG=0 FY=0 FR=1 FL_show= 10 HL_show=  4
+
+                 105HG=1 HY=0 HR=0 FG=0 FY=0 FR=1 FL_show=  9 HL_show=  3
+
+                 115HG=1 HY=0 HR=0 FG=0 FY=0 FR=1 FL_show=  8 HL_show=  2
+
+                 125HG=1 HY=0 HR=0 FG=0 FY=0 FR=1 FL_show=  7 HL_show=  1
+
+                 135HG=0 HY=1 HR=0 FG=0 FY=0 FR=1 FL_show=  6 HL_show=  0
+
+                 145HG=0 HY=1 HR=0 FG=0 FY=0 FR=1 FL_show=  5 HL_show=  0
+
+                 155HG=0 HY=1 HR=0 FG=0 FY=0 FR=1 FL_show=  4 HL_show=  0
+
+                 165HG=0 HY=0 HR=1 FG=0 FY=0 FR=1 FL_show=  3 HL_show= 16
+
+                 175HG=0 HY=0 HR=1 FG=0 FY=0 FR=1 FL_show=  2 HL_show= 15
+
+                 185HG=0 HY=0 HR=1 FG=0 FY=0 FR=1 FL_show=  1 HL_show= 14
+
+                 195HG=0 HY=0 HR=1 FG=1 FY=0 FR=0 FL_show=  7 HL_show= 13
+
+                 205HG=0 HY=0 HR=1 FG=1 FY=0 FR=0 FL_show=  6 HL_show= 12
+
+                 215HG=0 HY=0 HR=1 FG=1 FY=0 FR=0 FL_show=  5 HL_show= 11
+
+                 225HG=0 HY=0 HR=1 FG=1 FY=0 FR=0 FL_show=  4 HL_show= 10
+
+                 235HG=0 HY=0 HR=1 FG=1 FY=0 FR=0 FL_show=  3 HL_show=  9
+
+                 245HG=0 HY=0 HR=1 FG=1 FY=0 FR=0 FL_show=  2 HL_show=  8
+
+                 255HG=0 HY=0 HR=1 FG=1 FY=0 FR=0 FL_show=  1 HL_show=  7
+
+                 265HG=0 HY=0 HR=1 FG=0 FY=1 FR=0 FL_show=  0 HL_show=  6
+
+                 275HG=0 HY=0 HR=1 FG=0 FY=1 FR=0 FL_show=  0 HL_show=  5
+
+                 285HG=0 HY=0 HR=1 FG=0 FY=1 FR=0 FL_show=  0 HL_show=  4
+
+                 295HG=0 HY=0 HR=1 FG=0 FY=0 FR=1 FL_show= 99 HL_show=  3
+
+                 305HG=0 HY=0 HR=1 FG=0 FY=0 FR=1 FL_show= 99 HL_show=  2
+
+                 315HG=0 HY=0 HR=1 FG=0 FY=0 FR=1 FL_show= 99 HL_show=  1
+
+                 325HG=1 HY=0 HR=0 FG=0 FY=0 FR=1 FL_show= 99 HL_show= 99
+
+                 375HG=1 HY=0 HR=0 FG=0 FY=0 FR=1 FL_show= 11 HL_show=  5
+
+                 385HG=1 HY=0 HR=0 FG=0 FY=0 FR=1 FL_show= 10 HL_show=  4
+
+                 395HG=1 HY=0 HR=0 FG=0 FY=0 FR=1 FL_show=  9 HL_show=  3
+
+                 405HG=1 HY=0 HR=0 FG=0 FY=0 FR=1 FL_show=  8 HL_show=  2
+
+                 415HG=1 HY=0 HR=0 FG=0 FY=0 FR=1 FL_show=  7 HL_show=  1
+
+                 425HG=0 HY=1 HR=0 FG=0 FY=0 FR=1 FL_show=  6 HL_show=  0
+
+                 435HG=0 HY=1 HR=0 FG=0 FY=0 FR=1 FL_show=  5 HL_show=  0
+
+                 445HG=0 HY=1 HR=0 FG=0 FY=0 FR=1 FL_show=  4 HL_show=  0
+
+                 455HG=0 HY=0 HR=1 FG=0 FY=0 FR=1 FL_show=  3 HL_show= 16
+
+                 465HG=0 HY=0 HR=1 FG=0 FY=0 FR=1 FL_show=  2 HL_show= 15
+
+                 475HG=0 HY=0 HR=1 FG=0 FY=0 FR=1 FL_show=  1 HL_show= 14
+
+                 485HG=0 HY=0 HR=1 FG=1 FY=0 FR=0 FL_show=  7 HL_show= 13
+
+                 495HG=0 HY=0 HR=1 FG=1 FY=0 FR=0 FL_show=  6 HL_show= 12
+
+                 505HG=0 HY=0 HR=1 FG=1 FY=0 FR=0 FL_show=  5 HL_show= 11
+
+                 515HG=0 HY=0 HR=1 FG=1 FY=0 FR=0 FL_show=  4 HL_show= 10
+
+                 525HG=0 HY=0 HR=1 FG=1 FY=0 FR=0 FL_show=  3 HL_show=  9
+
+                 535HG=0 HY=0 HR=1 FG=1 FY=0 FR=0 FL_show=  2 HL_show=  8
+
+                 545HG=0 HY=0 HR=1 FG=1 FY=0 FR=0 FL_show=  1 HL_show=  7
+
+                 555HG=0 HY=0 HR=1 FG=0 FY=1 FR=0 FL_show=  0 HL_show=  6
+
+                 565HG=0 HY=0 HR=1 FG=0 FY=1 FR=0 FL_show=  0 HL_show=  5
+
+                 575HG=0 HY=0 HR=1 FG=0 FY=1 FR=0 FL_show=  0 HL_show=  4
+
+                 585HG=0 HY=0 HR=1 FG=0 FY=0 FR=1 FL_show= 99 HL_show=  3
+
+                 595HG=0 HY=0 HR=1 FG=0 FY=0 FR=1 FL_show= 99 HL_show=  2
+
+                 605HG=0 HY=0 HR=1 FG=0 FY=0 FR=1 FL_show= 99 HL_show=  1
+
+                 615HG=1 HY=0 HR=0 FG=0 FY=0 FR=1 FL_show= 99 HL_show= 99
+
+Simulation complete via $finish(1) at time 640 NS + 0
+./tb.v:32 		#250 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on May 24, 2020 at 13:10:27 CST  (total: 00:00:02)
